@@ -1,7 +1,7 @@
 {
   "name": "animate-linear-gradient",
-  "version": "0.0.0",
-  "description": "Animate linear-gradient css",
+  "version": "0.0.1",
+  "description": "Simply animate linear-gradient css",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
