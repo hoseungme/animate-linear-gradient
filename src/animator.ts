@@ -59,11 +59,9 @@ export class LinearGradientAnimator {
   }
 
   private animate(timestamp: number, prevTimestamp?: number) {
-    this.progress = this.easing(
-      clamp(this.progress + (prevTimestamp ? timestamp - prevTimestamp : 0) / this.duration, 0, 1)
-    );
+    this.progress = clamp(this.progress + (prevTimestamp ? timestamp - prevTimestamp : 0) / this.duration, 0, 1);
 
-    this.element.style.background = this.from.interpolate(this.to, this.progress).css();
+    this.element.style.background = this.from.interpolate(this.to, this.easing(this.progress)).css();
 
     if (this.progress < 1) {
       this.requestFrame(timestamp);
