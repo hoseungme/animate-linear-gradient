@@ -24,7 +24,7 @@ export class LinearGradient {
   public color(point: ColorStopPoint) {
     const nearestRightColorStopIndex = this.colorStops.findIndex((colorStop) => colorStop[1] >= point);
     if (nearestRightColorStopIndex < 0) {
-      return this.colorStops[this.colorStops.length][0];
+      return this.colorStops[this.colorStops.length - 1][0];
     }
 
     const nearestRightColorStop = this.colorStops[nearestRightColorStopIndex];
