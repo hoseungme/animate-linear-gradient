@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify"
   },
-  "author": "",
+  "author": "hoseungme",
   "license": "MIT",
   "devDependencies": {
     "tsup": "^8.3.5",
