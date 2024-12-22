@@ -25,7 +25,7 @@ const from = new LinearGradient({
   ],
 });
 
-// linear-gradient(270deg,rgba(0,219,222,1) 0%,rgba(252,0,255,1) 100%)
+// linear-gradient(270deg, rgba(0,219,222,1) 0%, rgba(252,0,255,1) 100%)
 from.css();
 
 const to = new LinearGradient({
@@ -37,7 +37,7 @@ const to = new LinearGradient({
   ],
 });
 
-// linear-gradient(43deg,rgba(65,88,208,1) 0%, rgba(200,80,192,1) 46, rgba(255,204,112,1) 100%)
+// linear-gradient(43deg, rgba(65,88,208,1) 0%, rgba(200,80,192,1) 46%, rgba(255,204,112,1) 100%)
 to.css();
 ```
 
