@@ -38,9 +38,9 @@ export class LinearGradientAnimator {
   }
 
   public seek(progress: number) {
-    this.progress = this.easing(clamp(progress, 0, 1));
+    this.progress = clamp(progress, 0, 1);
     requestAnimationFrame(() => {
-      this.element.style.background = this.from.interpolate(this.to, this.progress).css();
+      this.element.style.background = this.from.interpolate(this.to, this.easing(this.progress)).css();
     });
   }
 
