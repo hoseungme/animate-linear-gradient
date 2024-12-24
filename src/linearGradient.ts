@@ -1,13 +1,11 @@
 import { RGB } from "./color";
 import { interpolate, interpolateInValue } from "./math";
 
-export type ColorStopPoint = number;
-
 export class LinearGradient {
   public readonly angle: number;
-  public readonly colorStops: [RGB, ColorStopPoint][];
+  public readonly colorStops: [RGB, number][];
 
-  constructor({ angle, colorStops }: { angle: number; colorStops: [RGB, ColorStopPoint][] }) {
+  constructor({ angle, colorStops }: { angle: number; colorStops: [RGB, number][] }) {
     this.angle = angle;
     this.colorStops = colorStops.toSorted((a, b) => a[1] - b[1]);
   }
@@ -21,7 +19,7 @@ export class LinearGradient {
     });
   }
 
-  public color(point: ColorStopPoint) {
+  public color(point: number) {
     const nearestRightColorStopIndex = this.colorStops.findIndex((colorStop) => colorStop[1] >= point);
     if (nearestRightColorStopIndex < 0) {
       return this.colorStops[this.colorStops.length - 1][0];
