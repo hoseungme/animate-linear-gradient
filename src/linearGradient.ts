@@ -1,5 +1,5 @@
 import { RGB } from "./color";
-import { interpolate, interpolateInValue } from "./math";
+import { interpolate, interpolateInValue } from "./utils";
 
 export class LinearGradient {
   public readonly angle: number;

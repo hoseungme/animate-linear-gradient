@@ -1,4 +1,4 @@
-import { clamp, interpolate } from "./math";
+import { clamp, interpolate } from "./utils";
 
 export type Coords = [number, number, number];
 

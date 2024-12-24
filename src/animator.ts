@@ -1,5 +1,5 @@
 import { LinearGradient } from "./linearGradient";
-import { clamp } from "./math";
+import { clamp } from "./utils";
 
 export class Animator {
   private readonly element: HTMLElement;
