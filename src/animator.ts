@@ -1,7 +1,7 @@
 import { LinearGradient } from "./linearGradient";
 import { clamp } from "./math";
 
-export class LinearGradientAnimator {
+export class Animator {
   private readonly element: HTMLElement;
   private readonly from: LinearGradient;
   private readonly to: LinearGradient;
