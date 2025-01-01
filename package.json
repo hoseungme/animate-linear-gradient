@@ -1,6 +1,6 @@
 {
   "name": "animate-linear-gradient",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Simply animate linear-gradient css background",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,6 +19,11 @@
       }
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoseungme/animate-linear-gradient.git"
+  },
+  "homepage": "https://github.com/hoseungme/animate-linear-gradient#readme",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify"
   },
